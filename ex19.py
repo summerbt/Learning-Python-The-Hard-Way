@@ -15,5 +15,3 @@ today_date = datetime.today()
 prompt = "What did you work on today:"
 today_log = work_capture(today_date, prompt)
 log_update(today_log)
-
-
