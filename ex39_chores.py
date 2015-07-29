@@ -52,6 +52,7 @@ for k,v in yearly_chore.items():
 	print('%s:\n'% k)
 	for k,v in monthly_chore.items():
 		wk = k
+		wk_list = v
 		print('%s:\n' % k)
 		for k, v in weekly.items():
 			dow=k
@@ -59,6 +60,8 @@ for k,v in yearly_chore.items():
 			if dow != 'Tuesday':
 				print('\t%s'% v)
 			else:
+				for i in wk_list:
+					print('\n\t%s'% i)
 				if wk != 'Week 4':
 					print('%s'% monthly_chore[wk])
 				else:
